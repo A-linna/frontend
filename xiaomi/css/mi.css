@@ -1,0 +1,109 @@
+header img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 120px;
+}
+
+header nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+}
+header nav li a {
+  color: #b0b0b0;
+  display: inline-block;
+}
+header nav li a span {
+  margin-right: 5px;
+}
+.nav-left {
+  display: flex;
+  margin-left: 20%;
+  gap: 5px;
+}
+
+.nav-right {
+  display: flex;
+  margin-right: 20%;
+  gap: 5px;
+}
+
+.qr-code {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 124px;
+  height: 150px;
+  margin-left: -48%;
+  box-shadow: 0px 1px 5px rgb(57, 53, 61);
+}
+.qr-code img {
+  margin-top: 10px;
+}
+.qr-code p {
+  margin-top: -5px;
+}
+
+.download {
+  position: relative;
+}
+
+.triangle {
+  display: none;
+  width: 0;
+  height: 0;
+  border-top: 8px solid #d8c1c1;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  left: 30%;
+}
+.download:hover .qr-code,
+.download:hover .triangle {
+  display: block;
+}
+
+.cart {
+  position: relative;
+  background-color: #424242;
+}
+
+.cart:hover {
+  background-color: white;
+  a {
+    color: orange;
+  }
+}
+.cart-list {
+  display: none;
+}
+.cart:hover .cart-list {
+  display: block;
+  width: 316px;
+  height: 100px;
+  line-height: 100px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+
+
+.two-nav{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  display: flex;
+
+}
+.logo{
+  align-items: start;
+  display: inline;
+  background-color: orange;
+}
