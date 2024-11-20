@@ -1,0 +1,183 @@
+/* generic  */
+* {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* header  */
+
+.header .header-top {
+  background-color: #333333;
+  .top-nav-bar {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+
+    .top-nav-left {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .top-nav-right {
+      display: flex;
+      justify-content: flex-end;
+      .cart {
+        position: relative;
+        margin-left: 20px;
+        padding: 0 5px;
+        background-color: #424242;
+      }
+      .cart::before,
+      .cart::after {
+        content: "";
+        display: inline-block;
+        width: 5px;
+      }
+      .cart:hover {
+        background-color: white;
+        .cart-item {
+          display: block;
+        }
+      }
+    }
+    li {
+      font-size: 1.5rem;
+      line-height: 3;
+      color: #b0b0b0;
+      span {
+        margin: 0px 5px 0px;
+        color: #424242;
+      }
+    }
+  }
+}
+
+/* download app */
+.header .download-app {
+  position: relative;
+
+  .app-qrCode {
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgb(57, 53, 61);
+    width: 130px;
+    height: 155px;
+    position: absolute;
+    left: -50%;
+    z-index: 1;
+    img {
+      max-width: 90%;
+      margin: 10px 5px 0px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-top: -20px;
+      color: #333;
+    }
+  }
+  .triangle {
+    display: none;
+    height: 0;
+    width: 0;
+    border-bottom: 12px solid white;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    left: 15px;
+    top: 33px;
+  }
+}
+.header .download-app:hover {
+  .app-qrCode {
+    display: block;
+  }
+  .triangle {
+    display: block;
+  }
+}
+
+/* cart */
+.header .header-top .top-nav-right .cart {
+  .cart-item {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 260px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    right: 0;
+  }
+}
+
+.header .header-sub {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr 1fr;
+  align-items: center;
+  justify-content: center;
+  /* logo */
+  .header-log .logo::after {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background: url("../image/logo-mi2.png") no-repeat center center / cover;
+  }
+  .sub-nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    li {
+      font-size: 2rem;
+      font-weight: 450;
+      color: #333;
+    }
+  }
+  .search {
+    height: 40px;
+    display: flex;
+    margin-left: 80px;
+    width: 250px;
+    .search-input {
+      font-size: 1.6rem;
+      width: 200px;
+      height: 100%;
+      display: inline-block;
+      border: 1px solid #ccc;
+    }
+  }
+}
+
+/* container */
+
+.container {
+  width: 1200px;
+  margin: 0px auto 0px;
+}
+
+/* btn */
+.btn-square {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.fa-solid {
+  font-size: 2rem;
+}
