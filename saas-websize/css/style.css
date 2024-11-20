@@ -107,7 +107,12 @@ img {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px	;
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 .container {
@@ -120,6 +125,49 @@ img {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/* card */
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.pricing {
+  .pricing-card-subheading {
+    margin-bottom: 30px;
+  }
+  .pricing-card-price {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .pricing-footer{
+    margin: 20px 0;
+  }
+
+  ul {
+    margin: 30px 0;
+
+    li {
+      margin-bottom: 20px;
+
+      i{
+        margin-right: 15px;
+      }
+    }
+  }
 }
 
 /* Button */
@@ -135,6 +183,7 @@ img {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
+  text-align: center;
 }
 
 .btn:hover {
@@ -215,13 +264,4 @@ img {
 .bg-black {
   background-color: #000;
   color: #fff;
-}
-
-/* card */
-
-.card {
-  background-color: #fff;
-  color: #000;
-  border-radius: 10px;
-  padding: 20px;
 }
