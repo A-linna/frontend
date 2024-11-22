@@ -268,30 +268,44 @@ a {
 
   .mall-grid {
     background: url("../image/mall-bg-k80.png") no-repeat center center / cover;
-    opacity: 0.8;
+    
     display: grid;
     width: 100%;
     height: 460px;
     grid-template-columns: 1fr 4fr;
 
+   
     .mall-subdivide {
       display: none;
+      opacity: 1 !important;
       grid-template-rows: repeat(6, 1fr);
       align-items: start;
       background-color: white;
-      box-shadow: inset -1px 1px 5px #b0b0b0, inset 0px -1px 5px #b0b0b0;
+      box-shadow: inset -1px 1px 4px #b0b0b0, inset 0px -1px 2px #b0b0b0;
       grid-auto-flow: column;
       justify-content: start;
+      align-items: start;
+      
       height: 460px;
       position: absolute;
-      z-index: 2;
+      z-index: 1;
       left: 20%;
       top: 0;
 
       > li {
+       
         margin: auto 0;
+        width: 245px;
+      
+        
         img {
           vertical-align: middle;
+          margin-right: 8px;
+        }
+        > a{
+          font-weight: 450;
+          font-size: 1.3rem;
+          color: #1a1919;
         }
       }
     }
