@@ -392,6 +392,18 @@ a {
   }
 }
 
+
+/* category */
+.recommend{
+ 
+  margin-top: 30px;
+  border: 1px solid #F5F5F5;
+  .recommend-header{
+    margin-top: 25px;
+  }
+}
+
+
 /* container */
 
 .container {
@@ -429,6 +441,10 @@ a {
   color: white;
 }
 
+.c-orange{
+  color: var(--orange);
+}
+
 /* font size */
 .font-md {
   font-size: 1.6rem;
@@ -436,4 +452,9 @@ a {
 
 .font-sm {
   font-size: 1.2rem;
+}
+
+/* bg-color */
+.bgc-light{
+  background-color: #F5F5F5;
 }
