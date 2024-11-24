@@ -593,6 +593,7 @@ h3 {
 
 /* 突出 */
 .protrude:hover {
+  transition: transform 0.4s;
   transform: translateY(-5px);
   box-shadow: 2px 2px 15px rgb(190, 188, 188), -2px 2px 15px rgb(190, 188, 188);
 }
